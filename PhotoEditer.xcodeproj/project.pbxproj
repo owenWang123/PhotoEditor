@@ -1,0 +1,908 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D4929C9EFC946918F9A5E0B /* libPods-PhotoEditer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47F3B92508364A152B2A85BA /* libPods-PhotoEditer.a */; };
+		5A1E89BA70007B99B6F9E8B4 /* libPods-PhotoEditerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A8F062D9A14225E25043E0B3 /* libPods-PhotoEditerTests.a */; };
+		5A80F9712159DD3000B2152C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A80F9702159DD3000B2152C /* AppDelegate.m */; };
+		5A80F9742159DD3000B2152C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A80F9732159DD3000B2152C /* ViewController.m */; };
+		5A80F9772159DD3000B2152C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A80F9752159DD3000B2152C /* Main.storyboard */; };
+		5A80F9792159DD3300B2152C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A80F9782159DD3300B2152C /* Assets.xcassets */; };
+		5A80F97C2159DD3300B2152C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A80F97A2159DD3300B2152C /* LaunchScreen.storyboard */; };
+		5A80F97F2159DD3300B2152C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A80F97E2159DD3300B2152C /* main.m */; };
+		5A80F9892159DD3400B2152C /* PhotoEditerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A80F9882159DD3400B2152C /* PhotoEditerTests.m */; };
+		5A80F9942159DD3400B2152C /* PhotoEditerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A80F9932159DD3400B2152C /* PhotoEditerUITests.m */; };
+		5A80F9D9215A12E600B2152C /* CDPMonitorKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A80F9A5215A12E600B2152C /* CDPMonitorKeyboard.m */; };
+		5A80F9DA215A12E600B2152C /* StoryMakerFontManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A80F9A7215A12E600B2152C /* StoryMakerFontManager.m */; };
+		5A80F9DB215A12E600B2152C /* UIImage+imageWithColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A80F9A9215A12E600B2152C /* UIImage+imageWithColor.m */; };
+		5A80F9DC215A12E600B2152C /* StoryMakeImageEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A80F9AC215A12E600B2152C /* StoryMakeImageEditorViewController.m */; };
+		5A80F9DD215A12E600B2152C /* LSDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A80F9B0215A12E600B2152C /* LSDrawView.m */; };
+		5A80F9DE215A12E600B2152C /* LJBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A80F9B3215A12E600B2152C /* LJBaseModel.m */; };
+		5A80F9DF215A12E600B2152C /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A80F9B5215A12E600B2152C /* NSObject+YYModel.m */; };
+		5A80F9E0215A12E600B2152C /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A80F9B7215A12E600B2152C /* YYClassInfo.m */; };
+		5A80F9E1215A12E600B2152C /* ImageUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A80F9BD215A12E600B2152C /* ImageUtil.m */; };
+		5A80F9E2215A12E600B2152C /* StoryMakeFilterFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A80F9BF215A12E600B2152C /* StoryMakeFilterFooterView.m */; };
+		5A80F9E3215A12E600B2152C /* StoryMakeFooterFilterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A80F9C1215A12E600B2152C /* StoryMakeFooterFilterCell.m */; };
+		5A80F9E4215A12E600B2152C /* StoryMakeStickerBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A80F9C4215A12E600B2152C /* StoryMakeStickerBaseView.m */; };
+		5A80F9E5215A12E600B2152C /* StoryMakeStickerFooterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A80F9C6215A12E600B2152C /* StoryMakeStickerFooterCell.m */; };
+		5A80F9E6215A12E600B2152C /* StoryMakeStickerFootSingleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A80F9C8215A12E600B2152C /* StoryMakeStickerFootSingleViewController.m */; };
+		5A80F9E7215A12E600B2152C /* StoryMakeStickerImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A80F9CA215A12E600B2152C /* StoryMakeStickerImageView.m */; };
+		5A80F9E8215A12E600B2152C /* StoryMakeStickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A80F9CC215A12E600B2152C /* StoryMakeStickerView.m */; };
+		5A80F9E9215A12E600B2152C /* StoryMakeToolsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A80F9CE215A12E600B2152C /* StoryMakeToolsView.m */; };
+		5A80F9EA215A12E600B2152C /* StoryMakeSelectColorFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A80F9D1215A12E600B2152C /* StoryMakeSelectColorFooterView.m */; };
+		5A80F9EB215A12E600B2152C /* StoryMakeStickerColorFootCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A80F9D3215A12E600B2152C /* StoryMakeStickerColorFootCollectionViewCell.m */; };
+		5A80F9EC215A12E600B2152C /* StoryMakeStickerColorFootSingleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A80F9D5215A12E600B2152C /* StoryMakeStickerColorFootSingleViewController.m */; };
+		5A80F9ED215A12E600B2152C /* StoryMakeStickerLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A80F9D7215A12E600B2152C /* StoryMakeStickerLabelView.m */; };
+		5A80F9EF215A150F00B2152C /* bgStory.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A80F9EE215A150F00B2152C /* bgStory.jpg */; };
+		BA6332F4AB6C4030684EEB9B /* libPods-PhotoEditerUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDDF0C840EC4416B41F61DA7 /* libPods-PhotoEditerUITests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5A80F9852159DD3400B2152C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A80F9642159DD2F00B2152C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A80F96B2159DD3000B2152C;
+			remoteInfo = PhotoEditer;
+		};
+		5A80F9902159DD3400B2152C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A80F9642159DD2F00B2152C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A80F96B2159DD3000B2152C;
+			remoteInfo = PhotoEditer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B0275B1D2D67DCC54B86B93 /* Pods-PhotoEditer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoEditer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoEditer/Pods-PhotoEditer.debug.xcconfig"; sourceTree = "<group>"; };
+		47F3B92508364A152B2A85BA /* libPods-PhotoEditer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PhotoEditer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A80F96C2159DD3000B2152C /* PhotoEditer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoEditer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A80F96F2159DD3000B2152C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5A80F9702159DD3000B2152C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5A80F9722159DD3000B2152C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5A80F9732159DD3000B2152C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5A80F9762159DD3000B2152C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5A80F9782159DD3300B2152C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5A80F97B2159DD3300B2152C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5A80F97D2159DD3300B2152C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A80F97E2159DD3300B2152C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5A80F9842159DD3400B2152C /* PhotoEditerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoEditerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A80F9882159DD3400B2152C /* PhotoEditerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoEditerTests.m; sourceTree = "<group>"; };
+		5A80F98A2159DD3400B2152C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A80F98F2159DD3400B2152C /* PhotoEditerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoEditerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A80F9932159DD3400B2152C /* PhotoEditerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoEditerUITests.m; sourceTree = "<group>"; };
+		5A80F9952159DD3400B2152C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A80F9A1215A101C00B2152C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		5A80F9A4215A12E600B2152C /* CDPMonitorKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDPMonitorKeyboard.h; sourceTree = "<group>"; };
+		5A80F9A5215A12E600B2152C /* CDPMonitorKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDPMonitorKeyboard.m; sourceTree = "<group>"; };
+		5A80F9A6215A12E600B2152C /* StoryMakerFontManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryMakerFontManager.h; sourceTree = "<group>"; };
+		5A80F9A7215A12E600B2152C /* StoryMakerFontManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryMakerFontManager.m; sourceTree = "<group>"; };
+		5A80F9A8215A12E600B2152C /* UIImage+imageWithColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+imageWithColor.h"; sourceTree = "<group>"; };
+		5A80F9A9215A12E600B2152C /* UIImage+imageWithColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+imageWithColor.m"; sourceTree = "<group>"; };
+		5A80F9AB215A12E600B2152C /* StoryMakeImageEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryMakeImageEditorViewController.h; sourceTree = "<group>"; };
+		5A80F9AC215A12E600B2152C /* StoryMakeImageEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryMakeImageEditorViewController.m; sourceTree = "<group>"; };
+		5A80F9AF215A12E600B2152C /* LSDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSDrawView.h; sourceTree = "<group>"; };
+		5A80F9B0215A12E600B2152C /* LSDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSDrawView.m; sourceTree = "<group>"; };
+		5A80F9B2215A12E600B2152C /* LJBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJBaseModel.h; sourceTree = "<group>"; };
+		5A80F9B3215A12E600B2152C /* LJBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJBaseModel.m; sourceTree = "<group>"; };
+		5A80F9B4215A12E600B2152C /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
+		5A80F9B5215A12E600B2152C /* NSObject+YYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYModel.m"; sourceTree = "<group>"; };
+		5A80F9B6215A12E600B2152C /* YYClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYClassInfo.h; sourceTree = "<group>"; };
+		5A80F9B7215A12E600B2152C /* YYClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYClassInfo.m; sourceTree = "<group>"; };
+		5A80F9B8215A12E600B2152C /* YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYModel.h; sourceTree = "<group>"; };
+		5A80F9BB215A12E600B2152C /* ColorMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorMatrix.h; sourceTree = "<group>"; };
+		5A80F9BC215A12E600B2152C /* ImageUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageUtil.h; sourceTree = "<group>"; };
+		5A80F9BD215A12E600B2152C /* ImageUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageUtil.m; sourceTree = "<group>"; };
+		5A80F9BE215A12E600B2152C /* StoryMakeFilterFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryMakeFilterFooterView.h; sourceTree = "<group>"; };
+		5A80F9BF215A12E600B2152C /* StoryMakeFilterFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryMakeFilterFooterView.m; sourceTree = "<group>"; };
+		5A80F9C0215A12E600B2152C /* StoryMakeFooterFilterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryMakeFooterFilterCell.h; sourceTree = "<group>"; };
+		5A80F9C1215A12E600B2152C /* StoryMakeFooterFilterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryMakeFooterFilterCell.m; sourceTree = "<group>"; };
+		5A80F9C3215A12E600B2152C /* StoryMakeStickerBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryMakeStickerBaseView.h; sourceTree = "<group>"; };
+		5A80F9C4215A12E600B2152C /* StoryMakeStickerBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryMakeStickerBaseView.m; sourceTree = "<group>"; };
+		5A80F9C5215A12E600B2152C /* StoryMakeStickerFooterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryMakeStickerFooterCell.h; sourceTree = "<group>"; };
+		5A80F9C6215A12E600B2152C /* StoryMakeStickerFooterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryMakeStickerFooterCell.m; sourceTree = "<group>"; };
+		5A80F9C7215A12E600B2152C /* StoryMakeStickerFootSingleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryMakeStickerFootSingleViewController.h; sourceTree = "<group>"; };
+		5A80F9C8215A12E600B2152C /* StoryMakeStickerFootSingleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryMakeStickerFootSingleViewController.m; sourceTree = "<group>"; };
+		5A80F9C9215A12E600B2152C /* StoryMakeStickerImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryMakeStickerImageView.h; sourceTree = "<group>"; };
+		5A80F9CA215A12E600B2152C /* StoryMakeStickerImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryMakeStickerImageView.m; sourceTree = "<group>"; };
+		5A80F9CB215A12E600B2152C /* StoryMakeStickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryMakeStickerView.h; sourceTree = "<group>"; };
+		5A80F9CC215A12E600B2152C /* StoryMakeStickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryMakeStickerView.m; sourceTree = "<group>"; };
+		5A80F9CD215A12E600B2152C /* StoryMakeToolsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryMakeToolsView.h; sourceTree = "<group>"; };
+		5A80F9CE215A12E600B2152C /* StoryMakeToolsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryMakeToolsView.m; sourceTree = "<group>"; };
+		5A80F9D0215A12E600B2152C /* StoryMakeSelectColorFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryMakeSelectColorFooterView.h; sourceTree = "<group>"; };
+		5A80F9D1215A12E600B2152C /* StoryMakeSelectColorFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryMakeSelectColorFooterView.m; sourceTree = "<group>"; };
+		5A80F9D2215A12E600B2152C /* StoryMakeStickerColorFootCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryMakeStickerColorFootCollectionViewCell.h; sourceTree = "<group>"; };
+		5A80F9D3215A12E600B2152C /* StoryMakeStickerColorFootCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryMakeStickerColorFootCollectionViewCell.m; sourceTree = "<group>"; };
+		5A80F9D4215A12E600B2152C /* StoryMakeStickerColorFootSingleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryMakeStickerColorFootSingleViewController.h; sourceTree = "<group>"; };
+		5A80F9D5215A12E600B2152C /* StoryMakeStickerColorFootSingleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryMakeStickerColorFootSingleViewController.m; sourceTree = "<group>"; };
+		5A80F9D6215A12E600B2152C /* StoryMakeStickerLabelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryMakeStickerLabelView.h; sourceTree = "<group>"; };
+		5A80F9D7215A12E600B2152C /* StoryMakeStickerLabelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryMakeStickerLabelView.m; sourceTree = "<group>"; };
+		5A80F9D8215A12E600B2152C /* WHStoryMakerHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHStoryMakerHeader.h; sourceTree = "<group>"; };
+		5A80F9EE215A150F00B2152C /* bgStory.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bgStory.jpg; sourceTree = "<group>"; };
+		68D10D1560F42C51DC48197D /* Pods-PhotoEditer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoEditer.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoEditer/Pods-PhotoEditer.release.xcconfig"; sourceTree = "<group>"; };
+		880556F117C963F4C45975F1 /* Pods-PhotoEditerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoEditerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoEditerTests/Pods-PhotoEditerTests.release.xcconfig"; sourceTree = "<group>"; };
+		92FA71C6F565CF121316ECE5 /* Pods-PhotoEditerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoEditerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoEditerUITests/Pods-PhotoEditerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A8F062D9A14225E25043E0B3 /* libPods-PhotoEditerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PhotoEditerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B38704CBEEC0EE6350AA0CF9 /* Pods-PhotoEditerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoEditerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoEditerUITests/Pods-PhotoEditerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DDDF0C840EC4416B41F61DA7 /* libPods-PhotoEditerUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PhotoEditerUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5AB690941BD569F4FC3298C /* Pods-PhotoEditerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoEditerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoEditerTests/Pods-PhotoEditerTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A80F9692159DD3000B2152C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D4929C9EFC946918F9A5E0B /* libPods-PhotoEditer.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A80F9812159DD3400B2152C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A1E89BA70007B99B6F9E8B4 /* libPods-PhotoEditerTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A80F98C2159DD3400B2152C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA6332F4AB6C4030684EEB9B /* libPods-PhotoEditerUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18679ABFCF66528B4E8DD2BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0B0275B1D2D67DCC54B86B93 /* Pods-PhotoEditer.debug.xcconfig */,
+				68D10D1560F42C51DC48197D /* Pods-PhotoEditer.release.xcconfig */,
+				F5AB690941BD569F4FC3298C /* Pods-PhotoEditerTests.debug.xcconfig */,
+				880556F117C963F4C45975F1 /* Pods-PhotoEditerTests.release.xcconfig */,
+				B38704CBEEC0EE6350AA0CF9 /* Pods-PhotoEditerUITests.debug.xcconfig */,
+				92FA71C6F565CF121316ECE5 /* Pods-PhotoEditerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		417BF556F703C05A792B534B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47F3B92508364A152B2A85BA /* libPods-PhotoEditer.a */,
+				A8F062D9A14225E25043E0B3 /* libPods-PhotoEditerTests.a */,
+				DDDF0C840EC4416B41F61DA7 /* libPods-PhotoEditerUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A80F9632159DD2F00B2152C = {
+			isa = PBXGroup;
+			children = (
+				5A80F96E2159DD3000B2152C /* PhotoEditer */,
+				5A80F9872159DD3400B2152C /* PhotoEditerTests */,
+				5A80F9922159DD3400B2152C /* PhotoEditerUITests */,
+				5A80F96D2159DD3000B2152C /* Products */,
+				18679ABFCF66528B4E8DD2BD /* Pods */,
+				417BF556F703C05A792B534B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5A80F96D2159DD3000B2152C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A80F96C2159DD3000B2152C /* PhotoEditer.app */,
+				5A80F9842159DD3400B2152C /* PhotoEditerTests.xctest */,
+				5A80F98F2159DD3400B2152C /* PhotoEditerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A80F96E2159DD3000B2152C /* PhotoEditer */ = {
+			isa = PBXGroup;
+			children = (
+				5A80F9A2215A12C000B2152C /* Tools */,
+				5A80F96F2159DD3000B2152C /* AppDelegate.h */,
+				5A80F9702159DD3000B2152C /* AppDelegate.m */,
+				5A80F9722159DD3000B2152C /* ViewController.h */,
+				5A80F9732159DD3000B2152C /* ViewController.m */,
+				5A80F9752159DD3000B2152C /* Main.storyboard */,
+				5A80F9782159DD3300B2152C /* Assets.xcassets */,
+				5A80F97A2159DD3300B2152C /* LaunchScreen.storyboard */,
+				5A80F97D2159DD3300B2152C /* Info.plist */,
+				5A80F9A1215A101C00B2152C /* PrefixHeader.pch */,
+				5A80F9EE215A150F00B2152C /* bgStory.jpg */,
+				5A80F97E2159DD3300B2152C /* main.m */,
+			);
+			path = PhotoEditer;
+			sourceTree = "<group>";
+		};
+		5A80F9872159DD3400B2152C /* PhotoEditerTests */ = {
+			isa = PBXGroup;
+			children = (
+				5A80F9882159DD3400B2152C /* PhotoEditerTests.m */,
+				5A80F98A2159DD3400B2152C /* Info.plist */,
+			);
+			path = PhotoEditerTests;
+			sourceTree = "<group>";
+		};
+		5A80F9922159DD3400B2152C /* PhotoEditerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5A80F9932159DD3400B2152C /* PhotoEditerUITests.m */,
+				5A80F9952159DD3400B2152C /* Info.plist */,
+			);
+			path = PhotoEditerUITests;
+			sourceTree = "<group>";
+		};
+		5A80F9A2215A12C000B2152C /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				5A80F9D8215A12E600B2152C /* WHStoryMakerHeader.h */,
+				5A80F9AA215A12E600B2152C /* StoryMakerEditor */,
+				5A80F9A3215A12E600B2152C /* StoryMakerHelper */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		5A80F9A3215A12E600B2152C /* StoryMakerHelper */ = {
+			isa = PBXGroup;
+			children = (
+				5A80F9A4215A12E600B2152C /* CDPMonitorKeyboard.h */,
+				5A80F9A5215A12E600B2152C /* CDPMonitorKeyboard.m */,
+				5A80F9A6215A12E600B2152C /* StoryMakerFontManager.h */,
+				5A80F9A7215A12E600B2152C /* StoryMakerFontManager.m */,
+				5A80F9A8215A12E600B2152C /* UIImage+imageWithColor.h */,
+				5A80F9A9215A12E600B2152C /* UIImage+imageWithColor.m */,
+			);
+			path = StoryMakerHelper;
+			sourceTree = "<group>";
+		};
+		5A80F9AA215A12E600B2152C /* StoryMakerEditor */ = {
+			isa = PBXGroup;
+			children = (
+				5A80F9AB215A12E600B2152C /* StoryMakeImageEditorViewController.h */,
+				5A80F9AC215A12E600B2152C /* StoryMakeImageEditorViewController.m */,
+				5A80F9AD215A12E600B2152C /* View */,
+			);
+			path = StoryMakerEditor;
+			sourceTree = "<group>";
+		};
+		5A80F9AD215A12E600B2152C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5A80F9AE215A12E600B2152C /* Draw */,
+				5A80F9B9215A12E600B2152C /* Filter */,
+				5A80F9C2215A12E600B2152C /* Sticker */,
+				5A80F9CD215A12E600B2152C /* StoryMakeToolsView.h */,
+				5A80F9CE215A12E600B2152C /* StoryMakeToolsView.m */,
+				5A80F9CF215A12E600B2152C /* Write */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5A80F9AE215A12E600B2152C /* Draw */ = {
+			isa = PBXGroup;
+			children = (
+				5A80F9AF215A12E600B2152C /* LSDrawView.h */,
+				5A80F9B0215A12E600B2152C /* LSDrawView.m */,
+				5A80F9B1215A12E600B2152C /* YYModel */,
+			);
+			path = Draw;
+			sourceTree = "<group>";
+		};
+		5A80F9B1215A12E600B2152C /* YYModel */ = {
+			isa = PBXGroup;
+			children = (
+				5A80F9B2215A12E600B2152C /* LJBaseModel.h */,
+				5A80F9B3215A12E600B2152C /* LJBaseModel.m */,
+				5A80F9B4215A12E600B2152C /* NSObject+YYModel.h */,
+				5A80F9B5215A12E600B2152C /* NSObject+YYModel.m */,
+				5A80F9B6215A12E600B2152C /* YYClassInfo.h */,
+				5A80F9B7215A12E600B2152C /* YYClassInfo.m */,
+				5A80F9B8215A12E600B2152C /* YYModel.h */,
+			);
+			path = YYModel;
+			sourceTree = "<group>";
+		};
+		5A80F9B9215A12E600B2152C /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				5A80F9BA215A12E600B2152C /* Helper */,
+				5A80F9BE215A12E600B2152C /* StoryMakeFilterFooterView.h */,
+				5A80F9BF215A12E600B2152C /* StoryMakeFilterFooterView.m */,
+				5A80F9C0215A12E600B2152C /* StoryMakeFooterFilterCell.h */,
+				5A80F9C1215A12E600B2152C /* StoryMakeFooterFilterCell.m */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
+		5A80F9BA215A12E600B2152C /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				5A80F9BB215A12E600B2152C /* ColorMatrix.h */,
+				5A80F9BC215A12E600B2152C /* ImageUtil.h */,
+				5A80F9BD215A12E600B2152C /* ImageUtil.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		5A80F9C2215A12E600B2152C /* Sticker */ = {
+			isa = PBXGroup;
+			children = (
+				5A80F9C3215A12E600B2152C /* StoryMakeStickerBaseView.h */,
+				5A80F9C4215A12E600B2152C /* StoryMakeStickerBaseView.m */,
+				5A80F9C5215A12E600B2152C /* StoryMakeStickerFooterCell.h */,
+				5A80F9C6215A12E600B2152C /* StoryMakeStickerFooterCell.m */,
+				5A80F9C7215A12E600B2152C /* StoryMakeStickerFootSingleViewController.h */,
+				5A80F9C8215A12E600B2152C /* StoryMakeStickerFootSingleViewController.m */,
+				5A80F9C9215A12E600B2152C /* StoryMakeStickerImageView.h */,
+				5A80F9CA215A12E600B2152C /* StoryMakeStickerImageView.m */,
+				5A80F9CB215A12E600B2152C /* StoryMakeStickerView.h */,
+				5A80F9CC215A12E600B2152C /* StoryMakeStickerView.m */,
+			);
+			path = Sticker;
+			sourceTree = "<group>";
+		};
+		5A80F9CF215A12E600B2152C /* Write */ = {
+			isa = PBXGroup;
+			children = (
+				5A80F9D0215A12E600B2152C /* StoryMakeSelectColorFooterView.h */,
+				5A80F9D1215A12E600B2152C /* StoryMakeSelectColorFooterView.m */,
+				5A80F9D2215A12E600B2152C /* StoryMakeStickerColorFootCollectionViewCell.h */,
+				5A80F9D3215A12E600B2152C /* StoryMakeStickerColorFootCollectionViewCell.m */,
+				5A80F9D4215A12E600B2152C /* StoryMakeStickerColorFootSingleViewController.h */,
+				5A80F9D5215A12E600B2152C /* StoryMakeStickerColorFootSingleViewController.m */,
+				5A80F9D6215A12E600B2152C /* StoryMakeStickerLabelView.h */,
+				5A80F9D7215A12E600B2152C /* StoryMakeStickerLabelView.m */,
+			);
+			path = Write;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A80F96B2159DD3000B2152C /* PhotoEditer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A80F9982159DD3400B2152C /* Build configuration list for PBXNativeTarget "PhotoEditer" */;
+			buildPhases = (
+				F06590968441F71C744FBD44 /* [CP] Check Pods Manifest.lock */,
+				5A80F9682159DD3000B2152C /* Sources */,
+				5A80F9692159DD3000B2152C /* Frameworks */,
+				5A80F96A2159DD3000B2152C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotoEditer;
+			productName = PhotoEditer;
+			productReference = 5A80F96C2159DD3000B2152C /* PhotoEditer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5A80F9832159DD3400B2152C /* PhotoEditerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A80F99B2159DD3400B2152C /* Build configuration list for PBXNativeTarget "PhotoEditerTests" */;
+			buildPhases = (
+				19934C96B0DC5063F6B7674E /* [CP] Check Pods Manifest.lock */,
+				5A80F9802159DD3400B2152C /* Sources */,
+				5A80F9812159DD3400B2152C /* Frameworks */,
+				5A80F9822159DD3400B2152C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A80F9862159DD3400B2152C /* PBXTargetDependency */,
+			);
+			name = PhotoEditerTests;
+			productName = PhotoEditerTests;
+			productReference = 5A80F9842159DD3400B2152C /* PhotoEditerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5A80F98E2159DD3400B2152C /* PhotoEditerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A80F99E2159DD3400B2152C /* Build configuration list for PBXNativeTarget "PhotoEditerUITests" */;
+			buildPhases = (
+				979F5DADB3CACF9C9D04BFB0 /* [CP] Check Pods Manifest.lock */,
+				5A80F98B2159DD3400B2152C /* Sources */,
+				5A80F98C2159DD3400B2152C /* Frameworks */,
+				5A80F98D2159DD3400B2152C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A80F9912159DD3400B2152C /* PBXTargetDependency */,
+			);
+			name = PhotoEditerUITests;
+			productName = PhotoEditerUITests;
+			productReference = 5A80F98F2159DD3400B2152C /* PhotoEditerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A80F9642159DD2F00B2152C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = owen;
+				TargetAttributes = {
+					5A80F96B2159DD3000B2152C = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					5A80F9832159DD3400B2152C = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 5A80F96B2159DD3000B2152C;
+					};
+					5A80F98E2159DD3400B2152C = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 5A80F96B2159DD3000B2152C;
+					};
+				};
+			};
+			buildConfigurationList = 5A80F9672159DD2F00B2152C /* Build configuration list for PBXProject "PhotoEditer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5A80F9632159DD2F00B2152C;
+			productRefGroup = 5A80F96D2159DD3000B2152C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A80F96B2159DD3000B2152C /* PhotoEditer */,
+				5A80F9832159DD3400B2152C /* PhotoEditerTests */,
+				5A80F98E2159DD3400B2152C /* PhotoEditerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A80F96A2159DD3000B2152C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A80F9EF215A150F00B2152C /* bgStory.jpg in Resources */,
+				5A80F97C2159DD3300B2152C /* LaunchScreen.storyboard in Resources */,
+				5A80F9792159DD3300B2152C /* Assets.xcassets in Resources */,
+				5A80F9772159DD3000B2152C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A80F9822159DD3400B2152C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A80F98D2159DD3400B2152C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19934C96B0DC5063F6B7674E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhotoEditerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		979F5DADB3CACF9C9D04BFB0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhotoEditerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F06590968441F71C744FBD44 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhotoEditer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A80F9682159DD3000B2152C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A80F9E2215A12E600B2152C /* StoryMakeFilterFooterView.m in Sources */,
+				5A80F9EC215A12E600B2152C /* StoryMakeStickerColorFootSingleViewController.m in Sources */,
+				5A80F9EA215A12E600B2152C /* StoryMakeSelectColorFooterView.m in Sources */,
+				5A80F9742159DD3000B2152C /* ViewController.m in Sources */,
+				5A80F9E4215A12E600B2152C /* StoryMakeStickerBaseView.m in Sources */,
+				5A80F9E3215A12E600B2152C /* StoryMakeFooterFilterCell.m in Sources */,
+				5A80F9E0215A12E600B2152C /* YYClassInfo.m in Sources */,
+				5A80F9E8215A12E600B2152C /* StoryMakeStickerView.m in Sources */,
+				5A80F9E9215A12E600B2152C /* StoryMakeToolsView.m in Sources */,
+				5A80F9DF215A12E600B2152C /* NSObject+YYModel.m in Sources */,
+				5A80F9DA215A12E600B2152C /* StoryMakerFontManager.m in Sources */,
+				5A80F9EB215A12E600B2152C /* StoryMakeStickerColorFootCollectionViewCell.m in Sources */,
+				5A80F9DC215A12E600B2152C /* StoryMakeImageEditorViewController.m in Sources */,
+				5A80F9ED215A12E600B2152C /* StoryMakeStickerLabelView.m in Sources */,
+				5A80F97F2159DD3300B2152C /* main.m in Sources */,
+				5A80F9DB215A12E600B2152C /* UIImage+imageWithColor.m in Sources */,
+				5A80F9E5215A12E600B2152C /* StoryMakeStickerFooterCell.m in Sources */,
+				5A80F9E1215A12E600B2152C /* ImageUtil.m in Sources */,
+				5A80F9712159DD3000B2152C /* AppDelegate.m in Sources */,
+				5A80F9E6215A12E600B2152C /* StoryMakeStickerFootSingleViewController.m in Sources */,
+				5A80F9E7215A12E600B2152C /* StoryMakeStickerImageView.m in Sources */,
+				5A80F9D9215A12E600B2152C /* CDPMonitorKeyboard.m in Sources */,
+				5A80F9DE215A12E600B2152C /* LJBaseModel.m in Sources */,
+				5A80F9DD215A12E600B2152C /* LSDrawView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A80F9802159DD3400B2152C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A80F9892159DD3400B2152C /* PhotoEditerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A80F98B2159DD3400B2152C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A80F9942159DD3400B2152C /* PhotoEditerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5A80F9862159DD3400B2152C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A80F96B2159DD3000B2152C /* PhotoEditer */;
+			targetProxy = 5A80F9852159DD3400B2152C /* PBXContainerItemProxy */;
+		};
+		5A80F9912159DD3400B2152C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A80F96B2159DD3000B2152C /* PhotoEditer */;
+			targetProxy = 5A80F9902159DD3400B2152C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5A80F9752159DD3000B2152C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A80F9762159DD3000B2152C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5A80F97A2159DD3300B2152C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A80F97B2159DD3300B2152C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5A80F9962159DD3400B2152C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5A80F9972159DD3400B2152C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5A80F9992159DD3400B2152C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B0275B1D2D67DCC54B86B93 /* Pods-PhotoEditer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3J7B9KYE5F;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PhotoEditer/PrefixHeader.pch";
+				INFOPLIST_FILE = PhotoEditer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.owen.PhotoEdit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5A80F99A2159DD3400B2152C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68D10D1560F42C51DC48197D /* Pods-PhotoEditer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3J7B9KYE5F;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PhotoEditer/PrefixHeader.pch";
+				INFOPLIST_FILE = PhotoEditer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.owen.PhotoEdit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5A80F99C2159DD3400B2152C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5AB690941BD569F4FC3298C /* Pods-PhotoEditerTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PhotoEditerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.owen.PhotoEditerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoEditer.app/PhotoEditer";
+			};
+			name = Debug;
+		};
+		5A80F99D2159DD3400B2152C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 880556F117C963F4C45975F1 /* Pods-PhotoEditerTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PhotoEditerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.owen.PhotoEditerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoEditer.app/PhotoEditer";
+			};
+			name = Release;
+		};
+		5A80F99F2159DD3400B2152C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B38704CBEEC0EE6350AA0CF9 /* Pods-PhotoEditerUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PhotoEditerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.owen.PhotoEditerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PhotoEditer;
+			};
+			name = Debug;
+		};
+		5A80F9A02159DD3400B2152C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92FA71C6F565CF121316ECE5 /* Pods-PhotoEditerUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PhotoEditerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.owen.PhotoEditerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PhotoEditer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A80F9672159DD2F00B2152C /* Build configuration list for PBXProject "PhotoEditer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A80F9962159DD3400B2152C /* Debug */,
+				5A80F9972159DD3400B2152C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A80F9982159DD3400B2152C /* Build configuration list for PBXNativeTarget "PhotoEditer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A80F9992159DD3400B2152C /* Debug */,
+				5A80F99A2159DD3400B2152C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A80F99B2159DD3400B2152C /* Build configuration list for PBXNativeTarget "PhotoEditerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A80F99C2159DD3400B2152C /* Debug */,
+				5A80F99D2159DD3400B2152C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A80F99E2159DD3400B2152C /* Build configuration list for PBXNativeTarget "PhotoEditerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A80F99F2159DD3400B2152C /* Debug */,
+				5A80F9A02159DD3400B2152C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5A80F9642159DD2F00B2152C /* Project object */;
+}
